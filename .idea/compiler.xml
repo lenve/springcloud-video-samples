@@ -6,17 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud-video-samples" />
         <module name="consumer" />
         <module name="provider" />
+        <module name="commons" />
         <module name="eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="commons" target="1.8" />
       <module name="consumer" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="provider" target="1.8" />
-      <module name="springcloud-video-samples" target="1.5" />
+      <module name="springcloud-video-samples" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
