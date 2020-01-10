@@ -137,5 +137,19 @@ public class UseHelloController {
         System.out.println(s);
     }
 
+    @GetMapping("/hello8")
+    public void hello8() {
+        MultiValueMap<String, Object> map = new LinkedMultiValueMap<>();
+        map.add("username", "javaboy");
+        map.add("password", "123");
+        map.add("id", 99);
+        restTemplate.put("http://provider/user1", map);
+        User user = new User();
+        user.setId(98);
+        user.setUsername("zhangsan");
+        user.setPassword("456");
+        restTemplate.put("http://provider/user2", user);
+    }
+
 
 }

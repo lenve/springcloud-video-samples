@@ -2,10 +2,7 @@ package org.javaboy.provider;
 
 import org.javaboy.commons.User;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class HelloController {
@@ -28,6 +25,15 @@ public class HelloController {
     @PostMapping("/user2")
     public User addUser2(@RequestBody User user) {
         return user;
+    }
+
+    @PutMapping("/user1")
+    public void updateUser1(User user) {
+        System.out.println(user);
+    }
+    @PutMapping("/user2")
+    public void updateUser2(@RequestBody User user) {
+        System.out.println(user);
     }
 
 }
