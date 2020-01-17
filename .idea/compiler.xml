@@ -7,13 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consumer" />
-        <module name="provider" />
+        <module name="consul-provider" />
         <module name="commons" />
+        <module name="provider" />
         <module name="eureka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="commons" target="1.8" />
+      <module name="consul-provider" target="1.8" />
       <module name="consumer" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="provider" target="1.8" />
@@ -22,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consul-provider" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="provider" options="-parameters" />
