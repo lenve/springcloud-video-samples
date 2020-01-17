@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/commons/commons.iml" filepath="$PROJECT_DIR$/commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consul-consumer/consul-consumer.iml" filepath="$PROJECT_DIR$/consul-consumer/consul-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/consul-provider/consul-provider.iml" filepath="$PROJECT_DIR$/consul-provider/consul-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
