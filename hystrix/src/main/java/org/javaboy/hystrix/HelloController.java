@@ -38,4 +38,17 @@ public class HelloController {
             e.printStackTrace();
         }
     }
+
+    @GetMapping("/hello3")
+    public void hello3() {
+        Future<String> hello2 = helloService.hello2();
+        try {
+            String s = hello2.get();
+            System.out.println(s);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+    }
 }
