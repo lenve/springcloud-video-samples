@@ -13,3 +13,6 @@
 |07|第 03 章 第 5 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v3-5.zip)|RestTemplate POST 请求 Demo|
 |08|第 03 章 第 6 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v3-6.zip)|RestTemplate PUT 请求 Demo|
 |09|第 03 章 第 7 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v3-7.zip)|RestTemplate DELETE 请求 Demo|
+|10|第 04 章 第 3 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v4-3.zip)|Consul 单节点注册|
+|11|第 04 章 第 4 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v4-4.zip)|Consul 集群注册|
+|12|第 04 章 第 5 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v4-5.zip)|Consul 消费|
