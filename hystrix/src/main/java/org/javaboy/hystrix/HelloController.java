@@ -3,6 +3,7 @@ package org.javaboy.hystrix;
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
+import org.javaboy.commons.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,10 +27,10 @@ public class HelloController {
     @GetMapping("/hello2")
     public void hello2() {
         HystrixRequestContext ctx = HystrixRequestContext.initializeContext();
-        HelloCommand helloCommand = new HelloCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("javaboy")), restTemplate,"javaboy");
+        HelloCommand helloCommand = new HelloCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("javaboy")), restTemplate, "javaboy");
         String execute = helloCommand.execute();//直接执行
         System.out.println(execute);
-        HelloCommand helloCommand2 = new HelloCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("javaboy")), restTemplate,"javaboy");
+        HelloCommand helloCommand2 = new HelloCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("javaboy")), restTemplate, "javaboy");
         try {
             Future<String> queue = helloCommand2.queue();
             String s = queue.get();
@@ -66,4 +67,31 @@ public class HelloController {
         javaboy = helloService.hello3("javaboy");
         ctx.close();
     }
+
+    @Autowired
+    UserService userService;
+
+    @GetMapping("/hello5")
+    public void hello5() throws ExecutionException, InterruptedException {
+        HystrixRequestContext ctx = HystrixRequestContext.initializeContext();
+        UserCollapseCommand cmd1 = new UserCollapseCommand(userService, 99);
+        UserCollapseCommand cmd2 = new UserCollapseCommand(userService, 98);
+        UserCollapseCommand cmd3 = new UserCollapseCommand(userService, 97);
+        Future<User> q1 = cmd1.queue();
+        Future<User> q2 = cmd2.queue();
+        Future<User> q3 = cmd3.queue();
+        User u1 = q1.get();
+        User u2 = q2.get();
+        User u3 = q3.get();
+        System.out.println(u1);
+        System.out.println(u2);
+        System.out.println(u3);
+        Thread.sleep(2000);
+        UserCollapseCommand cmd4 = new UserCollapseCommand(userService, 96);
+        Future<User> q4 = cmd4.queue();
+        User u4 = q4.get();
+        System.out.println(u4);
+        ctx.close();
+    }
+
 }
