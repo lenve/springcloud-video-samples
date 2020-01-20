@@ -18,6 +18,12 @@ public class UserService {
     @Autowired
     RestTemplate restTemplate;
 
+    @HystrixCollapser(batchMethod = "getUsersByIds",collapserProperties = {@HystrixProperty(name = "timerDelayInMilliseconds",value = "200")})
+    public Future<User> getUserById(Integer id) {
+        return null;
+    }
+
+    @HystrixCommand
     public List<User> getUsersByIds(List<Integer> ids) {
         User[] users = restTemplate.getForObject("http://provider/user/{1}", User[].class, StringUtils.join(ids, ","));
         return Arrays.asList(users);
