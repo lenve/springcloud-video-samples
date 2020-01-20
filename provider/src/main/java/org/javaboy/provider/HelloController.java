@@ -4,6 +4,8 @@ import org.javaboy.commons.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
+
 @RestController
 public class HelloController {
     @Value("${server.port}")
@@ -16,6 +18,7 @@ public class HelloController {
 
     @GetMapping("/hello2")
     public String hello2(String name) {
+        System.out.println(new Date() + ">>>" + name);
         return "hello " + name;
     }
 

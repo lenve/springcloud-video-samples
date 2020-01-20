@@ -2,6 +2,7 @@ package org.javaboy.hystrix;
 
 import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
+import com.netflix.hystrix.strategy.concurrency.HystrixRequestContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,10 +25,11 @@ public class HelloController {
 
     @GetMapping("/hello2")
     public void hello2() {
-        HelloCommand helloCommand = new HelloCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("javaboy")), restTemplate);
+        HystrixRequestContext ctx = HystrixRequestContext.initializeContext();
+        HelloCommand helloCommand = new HelloCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("javaboy")), restTemplate,"javaboy");
         String execute = helloCommand.execute();//直接执行
         System.out.println(execute);
-        HelloCommand helloCommand2 = new HelloCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("javaboy")), restTemplate);
+        HelloCommand helloCommand2 = new HelloCommand(HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("javaboy")), restTemplate,"javaboy");
         try {
             Future<String> queue = helloCommand2.queue();
             String s = queue.get();
@@ -37,6 +39,7 @@ public class HelloController {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+        ctx.close();
     }
 
     @GetMapping("/hello3")
@@ -50,5 +53,17 @@ public class HelloController {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
+    }
+
+    @GetMapping("/hello4")
+    public void hello4() {
+        HystrixRequestContext ctx = HystrixRequestContext.initializeContext();
+        //第一请求完，数据已经缓存下来了
+        String javaboy = helloService.hello3("javaboy");
+        //删除数据，同时缓存中的数据也会被删除
+        helloService.deleteUserByName("javaboy");
+        //第二次请求时，虽然参数还是 javaboy，但是缓存数据已经没了，所以这一次，provider 还是会收到请求
+        javaboy = helloService.hello3("javaboy");
+        ctx.close();
     }
 }

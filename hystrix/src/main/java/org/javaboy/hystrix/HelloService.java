@@ -1,6 +1,9 @@
 package org.javaboy.hystrix;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheKey;
+import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheRemove;
+import com.netflix.hystrix.contrib.javanica.cache.annotation.CacheResult;
 import com.netflix.hystrix.contrib.javanica.command.AsyncResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +29,22 @@ public class HelloService {
     public String hello() {
         int i = 1 / 0;
         return restTemplate.getForObject("http://provider/hello", String.class);
+    }
+
+    @HystrixCommand(fallbackMethod = "error2")
+    @CacheResult//这个注解表示该方法的请求结果会被缓存起来，默认情况下，缓存的 key 就是方法的参数，缓存的 value 就是方法的返回值。
+    public String hello3(String name) {
+        return restTemplate.getForObject("http://provider/hello2?name={1}", String.class, name);
+    }
+
+    @HystrixCommand
+    @CacheRemove(commandKey = "hello3")
+    public String deleteUserByName(String name) {
+        return null;
+    }
+
+    public String error2(String name) {
+        return "error:javaboy";
     }
 
     @HystrixCommand(fallbackMethod = "error")
