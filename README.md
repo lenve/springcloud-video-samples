@@ -16,3 +16,9 @@
 |10|第 04 章 第 3 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v4-3.zip)|Consul 单节点注册|
 |11|第 04 章 第 4 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v4-4.zip)|Consul 集群注册|
 |12|第 04 章 第 5 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v4-5.zip)|Consul 消费|
+|13|第 05 章 第 2 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v5-2.zip)|Hystrix 基本使用|
+|14|第 05 章 第 4 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v5-4.zip)|Hystrix 请求命令|
+|15|第 05 章 第 5 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v5-5.zip)|Hystrix 注解实现异步调用|
+|16|第 05 章 第 6 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v5-6.zip)|Hystrix 容错[请求命令方式]|
+|17|第 05 章 第 7 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v5-7.zip)|Hystrix 异常处理|
+|18|第 05 章 第 8 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v5-8.zip)|Hystrix 请求缓存|
