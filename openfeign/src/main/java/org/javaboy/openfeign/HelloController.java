@@ -22,9 +22,9 @@ public class HelloController {
         user.setId(1);
         user.setUsername("javaboy");
         user.setPassword("123");
-        User u = helloService.addUser(user);
+        User u = helloService.addUser2(user);
         System.out.println(u);
-        helloService.deleteUserById(1);
+        helloService.deleteUser2(1);
         helloService.getUserByName(URLEncoder.encode("江南一点雨", "UTF-8"));
         return helloService.hello();
     }

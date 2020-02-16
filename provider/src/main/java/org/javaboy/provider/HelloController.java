@@ -1,5 +1,6 @@
 package org.javaboy.provider;
 
+import org.javaboy.api.IUserService;
 import org.javaboy.commons.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -9,16 +10,16 @@ import java.net.URLDecoder;
 import java.util.Date;
 
 @RestController
-public class HelloController {
+public class HelloController implements IUserService {
     @Value("${server.port}")
     Integer port;
 
-    @GetMapping("/hello")
+    @Override
     public String hello() {
         return "hello javaboy:" + port;
     }
 
-    @GetMapping("/hello2")
+    @Override
     public String hello2(String name) {
         System.out.println(new Date() + ">>>" + name);
         return "hello " + name;
@@ -29,7 +30,7 @@ public class HelloController {
         return user;
     }
 
-    @PostMapping("/user2")
+    @Override
     public User addUser2(@RequestBody User user) {
         return user;
     }
@@ -49,12 +50,12 @@ public class HelloController {
         System.out.println(id);
     }
 
-    @DeleteMapping("/user2/{id}")
+    @Override
     public void deleteUser2(@PathVariable Integer id) {
         System.out.println(id);
     }
 
-    @GetMapping("/user3")
+    @Override
     public void getUserByName(@RequestHeader String name) throws UnsupportedEncodingException {
         System.out.println(URLDecoder.decode(name, "UTF-8"));
     }

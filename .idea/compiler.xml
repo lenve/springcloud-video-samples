@@ -14,6 +14,7 @@
         <module name="consul-consumer" />
         <module name="openfeign" />
         <module name="consumer" />
+        <module name="hello-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
       <module name="consul-provider" target="1.8" />
       <module name="consumer" target="1.8" />
       <module name="eureka" target="1.8" />
+      <module name="hello-api" target="1.8" />
       <module name="hystrix" target="1.8" />
       <module name="openfeign" target="1.8" />
       <module name="provider" target="1.8" />
