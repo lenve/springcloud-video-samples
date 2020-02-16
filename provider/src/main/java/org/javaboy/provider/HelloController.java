@@ -4,6 +4,8 @@ import org.javaboy.commons.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.Date;
 
 @RestController
@@ -50,5 +52,10 @@ public class HelloController {
     @DeleteMapping("/user2/{id}")
     public void deleteUser2(@PathVariable Integer id) {
         System.out.println(id);
+    }
+
+    @GetMapping("/user3")
+    public void getUserByName(@RequestHeader String name) throws UnsupportedEncodingException {
+        System.out.println(URLDecoder.decode(name, "UTF-8"));
     }
 }
