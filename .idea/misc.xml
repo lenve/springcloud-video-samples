@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/consul-provider/pom.xml" />
         <option value="$PROJECT_DIR$/consul-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/openfeign/pom.xml" />
       </list>
     </option>
   </component>

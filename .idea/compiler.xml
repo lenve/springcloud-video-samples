@@ -12,6 +12,7 @@
         <module name="eureka" />
         <module name="hystrix" />
         <module name="consul-consumer" />
+        <module name="openfeign" />
         <module name="consumer" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
       <module name="consumer" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="hystrix" target="1.8" />
+      <module name="openfeign" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="springcloud-video-samples" target="1.8" />
     </bytecodeTargetLevel>
@@ -33,6 +35,7 @@
       <module name="consumer" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="hystrix" options="-parameters" />
+      <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
     </option>
   </component>
