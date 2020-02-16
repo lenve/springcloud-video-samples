@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="consul-provider" />
         <module name="commons" />
+        <module name="resilience4j" />
         <module name="provider" />
         <module name="eureka" />
         <module name="hystrix" />
@@ -27,6 +28,7 @@
       <module name="hystrix" target="1.8" />
       <module name="openfeign" target="1.8" />
       <module name="provider" target="1.8" />
+      <module name="resilience4j" target="1.8" />
       <module name="springcloud-video-samples" target="1.8" />
     </bytecodeTargetLevel>
   </component>
