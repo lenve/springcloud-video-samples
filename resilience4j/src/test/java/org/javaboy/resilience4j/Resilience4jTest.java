@@ -12,7 +12,6 @@ import io.vavr.CheckedRunnable;
 import io.vavr.control.Try;
 import org.junit.Test;
 
-import javax.swing.*;
 import java.time.Duration;
 import java.util.Date;
 

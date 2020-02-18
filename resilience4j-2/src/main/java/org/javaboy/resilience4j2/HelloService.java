@@ -1,0 +1,16 @@
+package org.javaboy.resilience4j2;
+
+import io.github.resilience4j.retry.annotation.Retry;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+@Service
+@Retry(name = "retryA")//表示要使用的重试策略
+public class HelloService {
+    @Autowired
+    RestTemplate restTemplate;
+    public String hello() {
+        return restTemplate.getForObject("http://localhost:1113/hello", String.class);
+    }
+}

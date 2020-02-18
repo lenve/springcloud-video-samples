@@ -16,7 +16,10 @@ public class HelloController implements IUserService {
 
     @Override
     public String hello() {
-        return "hello javaboy:" + port;
+        String s = "hello javaboy:" + port;
+        System.out.println(s);
+        int i = 1 / 0;
+        return s;
     }
 
     @Override
