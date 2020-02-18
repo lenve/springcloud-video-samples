@@ -8,6 +8,15 @@ resilience4j:
         exponentialBackoffMultiplier: 1.1 # 间隔乘数
         retryExceptions:
           - java.lang.RuntimeException
+  circuitbreaker:
+    instances:
+      cbA:
+        ringBufferSizeInClosedState: 5
+        ringBufferSizeInHalfOpenState: 3
+        waitInterval: 5000
+        recordExceptions:
+          - org.springframework.web.client.HttpServerErrorException
+    circuit-breaker-aspect-order: 398
 spring:
   application:
     name: resilience4j
