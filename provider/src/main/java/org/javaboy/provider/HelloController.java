@@ -1,5 +1,6 @@
 package org.javaboy.provider;
 
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import org.javaboy.api.IUserService;
 import org.javaboy.commons.User;
 import org.springframework.beans.factory.annotation.Value;
@@ -15,10 +16,10 @@ public class HelloController implements IUserService {
     Integer port;
 
     @Override
+    @RateLimiter(name = "rlA")
     public String hello() {
         String s = "hello javaboy:" + port;
-        System.out.println(s);
-        int i = 1 / 0;
+        System.out.println(new Date());
         return s;
     }
 

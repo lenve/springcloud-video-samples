@@ -13,7 +13,10 @@ public class HelloService {
     RestTemplate restTemplate;
 
     public String hello() {
-        return restTemplate.getForObject("http://localhost:1113/hello", String.class);
+        for (int i = 0; i < 5; i++) {
+            restTemplate.getForObject("http://localhost:1113/hello", String.class);
+        }
+        return "success";
     }
 
     public String error(Throwable t) {
