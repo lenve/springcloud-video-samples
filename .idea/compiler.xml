@@ -6,19 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="consul-provider" />
+        <module name="hello-api" />
+        <module name="gateway" />
+        <module name="openfeign" />
         <module name="zuul" />
-        <module name="commons" />
         <module name="resilience4j" />
         <module name="provider" />
-        <module name="eureka" />
         <module name="hystrix" />
-        <module name="micrometer" />
-        <module name="consul-consumer" />
+        <module name="consul-provider" />
         <module name="resilience4j-2" />
-        <module name="openfeign" />
+        <module name="commons" />
+        <module name="eureka" />
         <module name="consumer" />
-        <module name="hello-api" />
+        <module name="consul-consumer" />
+        <module name="micrometer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -27,6 +28,7 @@
       <module name="consul-provider" target="1.8" />
       <module name="consumer" target="1.8" />
       <module name="eureka" target="1.8" />
+      <module name="gateway" target="1.8" />
       <module name="hello-api" target="1.8" />
       <module name="hystrix" target="1.8" />
       <module name="micrometer" target="1.8" />
@@ -44,6 +46,7 @@
       <module name="consul-provider" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="eureka" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="hystrix" options="-parameters" />
       <module name="micrometer" options="-parameters" />
       <module name="openfeign" options="-parameters" />
