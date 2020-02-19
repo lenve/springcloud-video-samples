@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/openfeign/pom.xml" />
         <option value="$PROJECT_DIR$/resilience4j-2/pom.xml" />
         <option value="$PROJECT_DIR$/micrometer/pom.xml" />
+        <option value="$PROJECT_DIR$/zuul/pom.xml" />
       </list>
     </option>
   </component>

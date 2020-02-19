@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consul-provider" />
+        <module name="zuul" />
         <module name="commons" />
-        <module name="consumer" />
+        <module name="resilience4j" />
         <module name="provider" />
         <module name="eureka" />
         <module name="hystrix" />
@@ -16,7 +17,7 @@
         <module name="consul-consumer" />
         <module name="resilience4j-2" />
         <module name="openfeign" />
-        <module name="resilience4j" />
+        <module name="consumer" />
         <module name="hello-api" />
       </profile>
     </annotationProcessing>
@@ -34,6 +35,7 @@
       <module name="resilience4j" target="1.8" />
       <module name="resilience4j-2" target="1.8" />
       <module name="springcloud-video-samples" target="1.8" />
+      <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -47,6 +49,7 @@
       <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="resilience4j-2" options="-parameters" />
+      <module name="zuul" options="-parameters" />
     </option>
   </component>
 </project>
