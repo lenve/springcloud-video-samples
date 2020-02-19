@@ -1,9 +1,13 @@
 spring:
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true # 开启自动代理
+      routes:
+        - id: javaboy_route
+          uri: http://httpbin.org
+          predicates:
+            - Query=name,java.*
+            - Method=GET
+            - After=2021-01-01T01:01:01+08:00[Asia/Shanghai]
   application:
     name: gateway
 eureka:
