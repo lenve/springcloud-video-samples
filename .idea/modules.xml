@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka/eureka.iml" filepath="$PROJECT_DIR$/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/hello-api/hello-api.iml" filepath="$PROJECT_DIR$/hello-api/hello-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/hystrix/hystrix.iml" filepath="$PROJECT_DIR$/hystrix/hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/micrometer/micrometer.iml" filepath="$PROJECT_DIR$/micrometer/micrometer.iml" />
       <module fileurl="file://$PROJECT_DIR$/openfeign/openfeign.iml" filepath="$PROJECT_DIR$/openfeign/openfeign.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider/provider.iml" filepath="$PROJECT_DIR$/provider/provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/resilience4j/resilience4j.iml" filepath="$PROJECT_DIR$/resilience4j/resilience4j.iml" />

@@ -8,14 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="consul-provider" />
         <module name="commons" />
+        <module name="consumer" />
         <module name="provider" />
         <module name="eureka" />
-        <module name="resilience4j-2" />
         <module name="hystrix" />
+        <module name="micrometer" />
         <module name="consul-consumer" />
+        <module name="resilience4j-2" />
         <module name="openfeign" />
         <module name="resilience4j" />
-        <module name="consumer" />
         <module name="hello-api" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
       <module name="eureka" target="1.8" />
       <module name="hello-api" target="1.8" />
       <module name="hystrix" target="1.8" />
+      <module name="micrometer" target="1.8" />
       <module name="openfeign" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="resilience4j" target="1.8" />
@@ -41,6 +43,7 @@
       <module name="consumer" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="hystrix" options="-parameters" />
+      <module name="micrometer" options="-parameters" />
       <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="resilience4j-2" options="-parameters" />

@@ -15,6 +15,7 @@
     <file url="file://$PROJECT_DIR$/eureka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hystrix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/micrometer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/openfeign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider/src/main/java" charset="UTF-8" />
