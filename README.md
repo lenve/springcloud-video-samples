@@ -31,7 +31,7 @@
 |25|第 06 章 第 6 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v6-6.zip)|OpenFeign数据压缩|
 |26|第 06 章 第 7 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v6-7.zip)|OpenFeign服务降级|
 |27|第 07 章 第 2 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-2.zip)|Resilience4j断路器|
-|27|第 07 章 第 3 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-3.zip)|Resilience4j-RateLimiter|
-|27|第 07 章 第 4 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-4.zip)|Resilience4j-Retry|
-|27|第 07 章 第 5 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-5.zip)|微服务中的重试|
-|27|第 07 章 第 6 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-6.zip)|微服务中的断路器|
+|28|第 07 章 第 3 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-3.zip)|Resilience4j-RateLimiter|
+|29|第 07 章 第 4 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-4.zip)|Resilience4j-Retry|
+|30|第 07 章 第 5 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-5.zip)|微服务中的重试|
+|31|第 07 章 第 6 小节|[点击下载视频案例](https://github.com/lenve/springcloud-video-samples/archive/v7-6.zip)|微服务中的断路器|
