@@ -9,6 +9,7 @@
         <module name="hello-api" />
         <module name="config-server" />
         <module name="config-client" />
+        <module name="stream" />
         <module name="gateway" />
         <module name="openfeign" />
         <module name="zuul" />
@@ -41,6 +42,7 @@
       <module name="resilience4j" target="1.8" />
       <module name="resilience4j-2" target="1.8" />
       <module name="springcloud-video-samples" target="1.8" />
+      <module name="stream" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -58,6 +60,7 @@
       <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="resilience4j-2" options="-parameters" />
+      <module name="stream" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
