@@ -20,6 +20,8 @@
       <module fileurl="file://$PROJECT_DIR$/sleuth/sleuth.iml" filepath="$PROJECT_DIR$/sleuth/sleuth.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-video-samples.iml" filepath="$PROJECT_DIR$/springcloud-video-samples.iml" />
       <module fileurl="file://$PROJECT_DIR$/stream/stream.iml" filepath="$PROJECT_DIR$/stream/stream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin01/zipkin01.iml" filepath="$PROJECT_DIR$/zipkin01/zipkin01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin02/zipkin02.iml" filepath="$PROJECT_DIR$/zipkin02/zipkin02.iml" />
       <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
     </modules>
   </component>

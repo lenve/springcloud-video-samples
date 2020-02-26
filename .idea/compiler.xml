@@ -10,8 +10,10 @@
         <module name="config-server" />
         <module name="config-client" />
         <module name="stream" />
+        <module name="zipkin02" />
         <module name="gateway" />
         <module name="openfeign" />
+        <module name="zipkin01" />
         <module name="sleuth" />
         <module name="zuul" />
         <module name="resilience4j" />
@@ -45,6 +47,8 @@
       <module name="sleuth" target="1.8" />
       <module name="springcloud-video-samples" target="1.8" />
       <module name="stream" target="1.8" />
+      <module name="zipkin01" target="1.8" />
+      <module name="zipkin02" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -64,6 +68,8 @@
       <module name="resilience4j-2" options="-parameters" />
       <module name="sleuth" options="-parameters" />
       <module name="stream" options="-parameters" />
+      <module name="zipkin01" options="-parameters" />
+      <module name="zipkin02" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
