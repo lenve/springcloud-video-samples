@@ -6,24 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hello-api" />
+        <module name="nacos" />
         <module name="config-server" />
-        <module name="config-client" />
+        <module name="sleuth" />
         <module name="stream" />
+        <module name="eureka" />
         <module name="zipkin02" />
         <module name="gateway" />
-        <module name="openfeign" />
         <module name="zipkin01" />
-        <module name="sleuth" />
+        <module name="resilience4j-2" />
         <module name="zuul" />
         <module name="resilience4j" />
         <module name="provider" />
         <module name="hystrix" />
         <module name="consul-provider" />
-        <module name="resilience4j-2" />
-        <module name="commons" />
-        <module name="eureka" />
+        <module name="config-client" />
+        <module name="openfeign" />
+        <module name="hello-api" />
         <module name="consumer" />
+        <module name="commons" />
         <module name="consul-consumer" />
         <module name="micrometer" />
       </profile>
@@ -40,6 +41,7 @@
       <module name="hello-api" target="1.8" />
       <module name="hystrix" target="1.8" />
       <module name="micrometer" target="1.8" />
+      <module name="nacos" target="1.8" />
       <module name="openfeign" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="resilience4j" target="1.8" />
@@ -63,6 +65,7 @@
       <module name="gateway" options="-parameters" />
       <module name="hystrix" options="-parameters" />
       <module name="micrometer" options="-parameters" />
+      <module name="nacos" options="-parameters" />
       <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="resilience4j-2" options="-parameters" />
