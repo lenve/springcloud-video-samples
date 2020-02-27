@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/nacos/pom.xml" />
         <option value="$PROJECT_DIR$/nacos01/pom.xml" />
         <option value="$PROJECT_DIR$/nacos02/pom.xml" />
+        <option value="$PROJECT_DIR$/sentinel/pom.xml" />
       </list>
     </option>
   </component>

@@ -21,6 +21,7 @@
         <module name="provider" />
         <module name="hystrix" />
         <module name="consul-provider" />
+        <module name="sentinel" />
         <module name="config-client" />
         <module name="openfeign" />
         <module name="hello-api" />
@@ -50,6 +51,7 @@
       <module name="provider" target="1.8" />
       <module name="resilience4j" target="1.8" />
       <module name="resilience4j-2" target="1.8" />
+      <module name="sentinel" target="1.8" />
       <module name="sleuth" target="1.8" />
       <module name="springcloud-video-samples" target="1.8" />
       <module name="stream" target="1.8" />
@@ -75,6 +77,7 @@
       <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="resilience4j-2" options="-parameters" />
+      <module name="sentinel" options="-parameters" />
       <module name="sleuth" options="-parameters" />
       <module name="stream" options="-parameters" />
       <module name="zipkin01" options="-parameters" />
