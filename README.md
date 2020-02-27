@@ -1,5 +1,9 @@
 ## Spring Cloud 视频案例
 
+扫码加微信（微信ID：**a_java_boy2**），备注 Java，进群讨论。
+
+![](https://user-images.githubusercontent.com/6023444/75459026-ba70d500-59b9-11ea-8cbd-3d5889f356c4.png)
+
 松哥自制的 Spring Cloud 视频案例。按需下载：
 
 |编号|视频|案例|备注|
