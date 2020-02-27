@@ -14,6 +14,8 @@
       <module fileurl="file://$PROJECT_DIR$/hystrix/hystrix.iml" filepath="$PROJECT_DIR$/hystrix/hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/micrometer/micrometer.iml" filepath="$PROJECT_DIR$/micrometer/micrometer.iml" />
       <module fileurl="file://$PROJECT_DIR$/nacos/nacos.iml" filepath="$PROJECT_DIR$/nacos/nacos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos01/nacos01.iml" filepath="$PROJECT_DIR$/nacos01/nacos01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nacos02/nacos02.iml" filepath="$PROJECT_DIR$/nacos02/nacos02.iml" />
       <module fileurl="file://$PROJECT_DIR$/openfeign/openfeign.iml" filepath="$PROJECT_DIR$/openfeign/openfeign.iml" />
       <module fileurl="file://$PROJECT_DIR$/provider/provider.iml" filepath="$PROJECT_DIR$/provider/provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/resilience4j/resilience4j.iml" filepath="$PROJECT_DIR$/resilience4j/resilience4j.iml" />

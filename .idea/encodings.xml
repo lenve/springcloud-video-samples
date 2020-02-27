@@ -19,6 +19,8 @@
     <file url="file://$PROJECT_DIR$/micrometer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/micrometer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/nacos/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos02/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/openfeign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/openfeign/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/provider/src/main/java" charset="UTF-8" />

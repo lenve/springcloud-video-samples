@@ -10,6 +10,7 @@
         <module name="config-server" />
         <module name="sleuth" />
         <module name="stream" />
+        <module name="nacos02" />
         <module name="eureka" />
         <module name="zipkin02" />
         <module name="gateway" />
@@ -25,6 +26,7 @@
         <module name="hello-api" />
         <module name="consumer" />
         <module name="commons" />
+        <module name="nacos01" />
         <module name="consul-consumer" />
         <module name="micrometer" />
       </profile>
@@ -42,6 +44,8 @@
       <module name="hystrix" target="1.8" />
       <module name="micrometer" target="1.8" />
       <module name="nacos" target="1.8" />
+      <module name="nacos01" target="1.8" />
+      <module name="nacos02" target="1.8" />
       <module name="openfeign" target="1.8" />
       <module name="provider" target="1.8" />
       <module name="resilience4j" target="1.8" />
@@ -66,6 +70,8 @@
       <module name="hystrix" options="-parameters" />
       <module name="micrometer" options="-parameters" />
       <module name="nacos" options="-parameters" />
+      <module name="nacos01" options="-parameters" />
+      <module name="nacos02" options="-parameters" />
       <module name="openfeign" options="-parameters" />
       <module name="provider" options="-parameters" />
       <module name="resilience4j-2" options="-parameters" />
